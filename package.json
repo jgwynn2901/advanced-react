@@ -5,7 +5,9 @@
   "author": "John Gwynn",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node lib/server.js"
+    "dev": "nodemon --exec babel-node lib/server.js",
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
     "presets": [
@@ -15,16 +17,24 @@
     ]
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0"
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^20.0.4",
+    "react-test-renderer": "^15.6.1"
   },
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "ejs": "^3.1.2",
-    "express": "^4.17.1"
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "pm2": "^2.4.6",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.5.0"
   }
 }

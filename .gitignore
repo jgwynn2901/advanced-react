@@ -3,4 +3,5 @@ public/vendor.js
 public/app.js
 coverage/
 build/
-
+report.*
+node_modules
